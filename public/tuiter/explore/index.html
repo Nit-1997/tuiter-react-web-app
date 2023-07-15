@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Explore</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"></script>
+    <link href="index.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+</head>
+
+<body>
+<div class="container wd-h-100">
+    <div class="row wd-h-100">
+        <div class="col-2 col-md-3 col-lg-1 col-xl-2">
+            <div class="list-group pt-3">
+                <div class="list-group-item wd-bg-black">
+                    <i class="fab fa-twitter fa-1x"></i>
+<!--                    <i class="fa-solid fa-t "></i>-->
+                </div>
+                <a href="../home.html"
+                   class="list-group-item wd-list-hover list-group-item-action wd-bg-black">
+                    <div class="wd-nav-icons-div">
+                        <i class="fa fa-home "></i>
+                        <div class="wd-nav-icons-text d-none d-xl-block ">Home</div>
+                    </div>
+                </a>
+                <a href="#" class="list-group-item wd-list-hover  wd-bg-black">
+                    <div class="wd-nav-icons-div">
+                        <i class="fa fa-hashtag "></i>
+                        <div class="wd-nav-icons-text d-none d-xl-block ">Explore</div>
+                    </div>
+                </a>
+                <a href="#" class="list-group-item wd-list-hover  wd-bg-black">
+                    <div class="wd-nav-icons-div">
+                        <i class="fa fa-bell "></i>
+                        <div class="wd-nav-icons-text d-none d-xl-block ">Notifications</div>
+                    </div>
+                </a>
+                <a href="#" class="list-group-item wd-list-hover  wd-bg-black">
+                    <div class="wd-nav-icons-div">
+                        <i class="fa fa-envelope "></i>
+                        <div class="wd-nav-icons-text d-none d-xl-block ">Messages</div>
+                    </div>
+                </a>
+                <a href="../bookmarks/index.html"
+                   class="list-group-item  wd-list-hover  wd-bg-black">
+                    <div class="wd-nav-icons-div">
+                        <i class="fa fa-bookmark "></i>
+                        <div class="wd-nav-icons-text d-none d-xl-block ">Bookmarks</div>
+                    </div>
+                </a>
+                <a href="#" class="list-group-item wd-list-hover  wd-bg-black">
+                    <div class="wd-nav-icons-div">
+                        <i class="fa fa-list "></i>
+                        <div class="wd-nav-icons-text d-none d-xl-block ">Lists</div>
+                    </div>
+                </a>
+                <a href="../profile.html"
+                   class="list-group-item wd-list-hover  wd-bg-black">
+                    <div class="wd-nav-icons-div">
+                        <i class="fa fa-user "></i>
+                        <div class="wd-nav-icons-text d-none d-xl-block ">Profile</div>
+                    </div>
+                </a>
+                <a href="#" class="list-group-item wd-list-hover  wd-bg-black">
+                    <div class="wd-nav-icons-div">
+                        <i class="fa fa-ellipsis-h "></i>
+                        <div class="wd-nav-icons-text d-none d-xl-block ">More</div>
+                    </div>
+                </a>
+            </div>
+            <a href="../tuit.html" class="btn btn-primary w-100 mt-2 rounded-pill">Tuit</a>
+        </div>
+        <div class="col-10 col-md-9 col-lg-7 col-xl-6 p-0 pt-3 wd-main-content">
+            <div class="row align-items-center ps-2 pe-2">
+                <div class="col-11">
+                    <div class="position-relative">
+                        <input class="ps-5 form-control rounded-pill  wd-search-bar"
+                               placeholder="Search Tuiter" />
+                        <span class="position-absolute wd-search-tuiter">
+                                <i class="fa fa-search wd-magnifying-icon" aria-hidden="true"></i>
+                            </span>
+                    </div>
+                </div>
+                <div class="col-1">
+                    <i class="fa fa-cog fa-xl" aria-hidden="true"></i>
+                </div>
+            </div>
+            <ul class="nav nav-tabs wd-nav-tab">
+                <li class="nav-item ">
+                    <a class="nav-link active" href="for-you.html">For You</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="trending.html">Trending</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="news.html">News</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="sports.html">Sports</a>
+                </li>
+                <li class="nav-item d-none d-md-block">
+                    <a class="nav-link " href="entertainment.html">Entertainment</a>
+                </li>
+            </ul>
+            <ul class="list-group mt-2 wd-tuit-list">
+                <li class="list-group-item p-0 wd-border-list">
+                    <div class="position-relative">
+                        <img src="https://techcrunch.com/wp-content/uploads/2019/09/Starship-Mk1-Day.jpg" width="100%" />
+                        <h1 class="position-absolute bottom-0  wd-starship-image">SpaceX's Starship</h1>
+                    </div>
+                </li>
+                <li class="list-group-item wd-noborder-list">
+                    <div class="row align-items-center">
+                        <div class="col-10">
+                            <div class="text-secondary">
+                                Web Development
+                            </div>
+                            <div>
+                                <span class="fw-bold ">ReactJS</span>
+                                <i class="fa fa-check-circle " aria-hidden="true"></i>
+                                <span class="text-secondary">&nbsp-&nbsp2h</span>
+                            </div>
+                            <div class="fw-bold ">
+                                React.js is a component based front end library that makes it very easy to build
+                                Single
+                                Page Applications or SPAs
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png" class="rounded" width="100%" height="100%" />
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item wd-noborder-list">
+                    <div class="row align-items-center">
+                        <div class="col-10">
+                            <div>
+                                <span class="fw-bold ">JavaScript</span>
+                                <i class="fa fa-check-circle " aria-hidden="true"></i>
+                                <span class="text-secondary">&nbsp-&nbsp2h</span>
+                            </div>
+                            <div class="fw-bold ">
+                                JavaScript is a programming language that can run on browsers as well as desktops
+                            </div>
+                            <div class="text-secondary">
+                                123k Tweets
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <img src="https://pbs.twimg.com/profile_images/1512774369558372361/IegUPpg-_400x400.jpg" class="rounded" width="100%" height="100%" />
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item wd-noborder-list">
+                    <div class="row align-items-center">
+                        <div class="col-10">
+                            <div class="text-secondary">
+                                Web Development
+                            </div>
+                            <div class="fw-bold ">
+                                jQuery </div>
+                            <div class="text-secondary">
+                                123k Tweets
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <img src="https://www.interviewbit.com/blog/wp-content/uploads/2021/10/jquery-logo-vertical_large_square.png" class="rounded" width="100%" height="100%" />
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item wd-noborder-list">
+                    <div class="row align-items-center">
+                        <div class="col-10">
+                            <div class="text-secondary">
+                                Web Development
+                            </div>
+                            <div>
+                                <span class="fw-bold ">NodeJS</span>
+                                <i class="fa fa-check-circle " aria-hidden="true"></i>
+                                <span class="text-secondary">&nbsp-&nbsp2h</span>
+                            </div>
+                            <div class="text-secondary">
+                                123k Tweets
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <img src="https://pluralsight2.imgix.net/paths/images/nodejs-45adbe594d.png" class="rounded" width="100%" height="100%" />
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="col-0 col-lg-4 col-xl-4 pt-3 d-none d-lg-block wd-h-100">
+            <ul class="list-group">
+                <li class="list-group-item ">
+                    <div class="fw-bold ">Who to follow</div>
+                </li>
+                <li class="list-group-item ">
+                    <div class="row w-100 align-items-center">
+                        <div class="col-7 col-xl-9">
+                            <div class="d-flex align-items-center">
+                                <img src="data:image/png;base64,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" width="20%" height="20%" class="rounded-circle" />
+                                <div class="ms-2">
+                                    <div>
+                                        <span class="fw-bold ">Java</span>
+                                        <i class="fa fa-check-circle " aria-hidden="true"></i>
+                                    </div>
+                                    <div class="">@Java</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-5 col-xl-3"> <button class="btn btn-primary rounded-pill">Follow</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item ">
+                    <div class="row w-100 align-items-center">
+                        <div class="col-7 col-xl-9">
+                            <div class="d-flex align-items-center">
+                                <img src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/j3dbh6kok0dket3uz2vy" width="20%" height="20%" class="rounded-circle" />
+                                <div class="ms-2">
+                                    <div>
+                                        <span class="fw-bold ">Relativity Space</span>
+                                        <i class="fa fa-check-circle " aria-hidden="true"></i>
+                                    </div>
+                                    <div class="">@relativityspace</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-5 col-xl-3"> <button class="btn btn-primary rounded-pill">Follow</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item ">
+                    <div class="row w-100 align-items-center">
+                        <div class="col-7 col-xl-9">
+                            <div class="d-flex align-items-center">
+                                <img src="data:image/png;base64,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" width="20%" height="20%" class="rounded-circle" />
+                                <div class="ms-2">
+                                    <div>
+                                        <span class="fw-bold ">Virgin Galactic</span>
+                                        <i class="fa fa-check-circle " aria-hidden="true"></i>
+                                    </div>
+                                    <div class="">@virgingalactic</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-5 col-xl-3"> <button class="btn btn-primary rounded-pill">Follow</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="row w-100 align-items-center">
+                        <div class="col-7 col-xl-9">
+                            <div class="d-flex align-items-center">
+                                <img src="https://yt3.ggpht.com/ytc/AMLnZu-6OoK1vqefumQnIGPodyy48E9d5QRs1p2AyPRx67g=s900-c-k-c0x00ffffff-no-rj" width="20%" height="20%" class="rounded-circle" />
+                                <div class="ms-2">
+                                    <div>
+                                        <span class="fw-bold ">NASA</span>
+                                        <i class="fa fa-check-circle " aria-hidden="true"></i>
+                                    </div>
+                                    <div class="">@NASA</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-5 col-xl-3"> <button class="btn btn-primary rounded-pill">Follow</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item ">
+                    <div class="row w-100 align-items-center">
+                        <div class="col-7 col-xl-9">
+                            <div class="d-flex align-items-center">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Tesla_T_symbol.svg/800px-Tesla_T_symbol.svg.png" width="20%" height="20%" class="rounded-circle" />
+                                <div class="ms-2">
+                                    <div>
+                                        <span class="fw-bold ">Tesla</span>
+                                        <i class="fa fa-check-circle " aria-hidden="true"></i>
+                                    </div>
+                                    <div class="">@Tesla</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-5 col-xl-3"> <button class="btn btn-primary rounded-pill">Follow</button>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="wd-footer">
+                <a href="#" class="wd-footer-text">Terms of service</a>
+                <a href="#" class="wd-footer-text">Privacy Policy</a>
+                <a href="#" class="wd-footer-text">Cookie Policy</a>
+                </br>
+                <a href="#" class="wd-footer-text">Ads Info</a>
+                <a href="#" class="wd-footer-text">More...</a>
+                <span class="wd-footer-text">&copy; 2022 Tuiter, Inc.</span>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>
