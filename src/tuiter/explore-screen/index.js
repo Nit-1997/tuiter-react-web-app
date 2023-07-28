@@ -5,7 +5,7 @@ import { GoGear } from "react-icons/go";
 import "./index.css";
 function ExploreScreen() {
     return(
-        <>
+        <div>
             <div className="row">
                 <div className="col-11 position-relative">
                     <input placeholder="Search Tuiter"
@@ -35,7 +35,7 @@ function ExploreScreen() {
                     SpaceX Starship</h1>
             </div>
             <TuitSummaryList/>
-        </>
+        </div>
     );
 };
 export default ExploreScreen;
