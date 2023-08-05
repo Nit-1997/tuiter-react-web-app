@@ -10,12 +10,6 @@ const authSlice = createSlice({
             [logoutThunk.fulfilled]: (state) => {
                 state.currentUser = null;
             },
-            [logoutThunk.pending]: (state) => {
-                state.currentUser = null;
-            },
-            [logoutThunk.rejected]: (state) => {
-                state.currentUser = null;
-            },
             [profileThunk.fulfilled]: (state, {payload}) => {
                 state.currentUser = payload;
             },
@@ -31,21 +25,9 @@ const authSlice = createSlice({
             [registerThunk.fulfilled]: (state, {payload}) => {
                 state.currentUser = payload;
             },
-            [registerThunk.pending]: (state, {payload}) => {
-                state.currentUser = null;
-            },
-            [registerThunk.rejected]: (state, {payload}) => {
-                state.currentUser = null;
-            },
             [loginThunk.fulfilled]: (state, {payload}) => {
                 state.currentUser = payload;
-            },
-            [loginThunk.pending]: (state, {payload}) => {
-                state.currentUser = null;
-            },
-            [loginThunk.rejected]: (state, {payload}) => {
-                state.currentUser = null;
-            },
+            }
         },
     })
 ;
