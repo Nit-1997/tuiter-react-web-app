@@ -2,8 +2,10 @@ import React from "react";
 import "./tuit-item.css";
 import {BiSolidBadgeCheck} from "react-icons/bi";
 import TuitToolkit from "./tuit-toolkit";
-const TuitItem = ({tuit}) => {
 
+
+
+const TuitItem = ({tuit}) => {
     return(
         <li className="list-group-item">
             <div className="row">

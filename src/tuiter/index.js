@@ -11,9 +11,13 @@ import {configureStore} from '@reduxjs/toolkit';
 import {Provider} from "react-redux";
 import WorkInProgressScreen from "./work-in-progress-screen";
 import "./index.css"
+import LoginScreen from "./user/Login-screen";
+import authReducer from "./reducers/auth-reducer";
+import ProfileScreen from "./user/profile-screen";
+import RegisterScreen from "./user/Register-screen";
 
 const store = configureStore(
-    {reducer: {who: whoReducer, tuits: tuitsReducer}});
+    {reducer: {who: whoReducer,  user:  authReducer , tuits: tuitsReducer }});
 
 
 function Tuiter() {
@@ -29,14 +33,16 @@ function Tuiter() {
                             </div>
                             <div className="col-9">
                                 <Routes>
-                                    <Route path="/*" element={<HomeScreen/>}/>
+                                    <Route path="/home" element={<HomeScreen/>}/>
                                     <Route path="/explore" element={<ExploreScreen/>}/>
                                     <Route path="/bookmarks" element={<WorkInProgressScreen/>}/>
-                                    <Route path="/profile" element={<WorkInProgressScreen/>}/>
                                     <Route path="/messages" element={<WorkInProgressScreen/>}/>
                                     <Route path="/lists" element={<WorkInProgressScreen/>}/>
                                     <Route path="/more" element={<WorkInProgressScreen/>}/>
                                     <Route path="/notifications" element={<WorkInProgressScreen/>}/>
+                                    <Route path="*"    element={<LoginScreen/>} />
+                                    <Route path="/register" element={<RegisterScreen />} />
+                                    <Route path="/profile"  element={<ProfileScreen/>} />
                                 </Routes>
                             </div>
                         </div>
