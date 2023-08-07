@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import TuitSummaryItem
     from "./tuit-summary-item";
 import {useSelector} from "react-redux";

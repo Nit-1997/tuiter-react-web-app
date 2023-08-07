@@ -3,6 +3,7 @@ import {useSelector, useDispatch} from "react-redux";
 import {useNavigate} from "react-router";
 import {profileThunk, logoutThunk, updateUserThunk}
     from "../services/auth-thunks";
+import {findTuitsThunk} from "../services/tuits-thunks";
 
 function ProfileScreen() {
     const {currentUser} = useSelector((state) => state.user);
@@ -11,21 +12,24 @@ function ProfileScreen() {
     const navigate = useNavigate();
     const save = async () => {
         await dispatch(updateUserThunk(profile));
+        alert("Saved Success")
     }
 
     useEffect(() => {
+        dispatch(findTuitsThunk())
         const loadProfile = async () => {
             const { payload } = await dispatch(profileThunk());
             if (payload) {
                 setProfile(payload)
             }
         };
-        loadProfile();
+        if(!profile){
+             loadProfile();
+        }
     }, []);
 
     return (
         <div>
-
             {profile ? ( <div>
                 <h1>Profile Screen</h1>
                 <div>
