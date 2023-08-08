@@ -3,7 +3,7 @@ import {AiFillDislike, AiFillHeart, AiOutlineHeart, AiOutlineUpload} from "react
 import {FaRetweet} from "react-icons/fa";
 import {CgComment, CgTrash} from "react-icons/cg";
 import {useDispatch} from "react-redux";
-import {deleteTuitThunk, updateTuitThunk} from "../services/tuits-thunks";
+import {updateTuitThunk} from "../services/tuits-thunks";
 
 const TuitToolkit = ({tuit}) => {
     let likeIcon = null;
@@ -22,14 +22,23 @@ const TuitToolkit = ({tuit}) => {
         dislikeIcon = <AiFillDislike/>;
     }
     const dispatch = useDispatch();
-    const deleteTuitHandler = (id) => {
-        dispatch(deleteTuitThunk(id));
-    }
 
     const dislikeTuitHandler = () => {
+        //if(!tuit.disliked) {
+            dispatch(updateTuitThunk({
+                ...tuit, dislikes: tuit.dislikes ? tuit.dislikes + 1 : 1,
+                disliked: true
+            }))
+       // }
+    }
 
-        dispatch(updateTuitThunk({ ...tuit, dislikes: tuit.dislikes ? tuit.dislikes + 1 : 1 ,
-            disliked: true }))
+    const likeTuitHandler = () => {
+        //if(!tuit.liked) {
+            dispatch(updateTuitThunk({
+                ...tuit, likes: tuit.likes + 1,
+                liked: true
+            }));
+       // }
     }
     return(
                  <div className="row container d-flex">
@@ -40,8 +49,7 @@ const TuitToolkit = ({tuit}) => {
                             <FaRetweet/> {tuit.retuits}
                         </div>
                         <div className="col-2"
-                             onClick={() =>
-                                 dispatch(updateTuitThunk({ ...tuit, likes: tuit.likes + 1 , liked: true }))}>
+                             onClick={() => likeTuitHandler()}>
                             {likeIcon} {tuit.likes}
                         </div>
                         <div className="col-2"
@@ -51,9 +59,6 @@ const TuitToolkit = ({tuit}) => {
                          </div>
                         <div className="col-2">
                             <AiOutlineUpload/>
-                        </div>
-                        <div className="col-2">
-                            <CgTrash onClick={() => deleteTuitHandler(tuit._id)}/>
                         </div>
                     </div>
     );
